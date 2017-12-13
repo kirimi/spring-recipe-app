@@ -2,9 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Rceipe home</title>
+    <title>Recipe home</title>
 </head>
 <body>
 <h1>My recepies!</h1>
+
+<div th:each="recipe: ${recipes}">
+    <p th:text="${recipe.description}">Description</p>
+</div>
+
+
 </body>
 </html>
